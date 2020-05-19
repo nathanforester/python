@@ -176,7 +176,7 @@ elif weather == "stormy":
 else:
     print("use factor 50")
 elif weather == 'stormy' & safety_alert == 'red:'
-
+# ..
 
 
 
