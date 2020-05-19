@@ -10,7 +10,16 @@ while True:
     full_name = input()
     if full_name != str:
         raise ValueError("Please enter a name")
-    print("Excuse me, what colour are your eyes?")
+    print("Please enter your gender. You may select 'male', 'female' or 'other' (e.g. 'genderless seahorse')")
+    gender = input()
+    if gender != str:
+        raise ValueError("Please enter your gender, for example, amphibious mortar gun")
+    if gender == 'male':
+        print("could you please enter your eye colour, sir?")
+    elif gender == 'female':
+        print("Could you please enter your eye colour, miss?")
+    else:
+        print("Excuse me, what colour are your eyes?")
     eye_colour = input()
     if eye_colour != str:
         raise ValueError("Please input a colour")
