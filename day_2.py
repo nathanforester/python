@@ -175,7 +175,7 @@ elif weather == "stormy":
     print("stay at home")
 else:
     print("use factor 50")
-elif weather == 'stormy' AND safety_alert = 'red:'
+elif weather == 'stormy' & safety_alert == 'red:'
 
 
 
