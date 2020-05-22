@@ -40,8 +40,10 @@
 # starter code
 
 menu = ['falafel', 'HuMMus', 'coUScous', 'Bacalhau a Bras']
-
+numbers = [1, 2, 3, 4]
+food_and_numbers = [numbers, menu]
 food_order = []
+
 
 for x in menu:
     print(x.lower().capitalize())
