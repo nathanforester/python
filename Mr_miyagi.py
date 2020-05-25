@@ -51,3 +51,9 @@ while True:
     print('Sometimes, what heart know, head forget')
     sys.exit(-1)
 
+        def functional_miyagi():
+            val_a = "you are smart, but not wise, address me as Sensei please"
+            val_b = "Remember, best block not to be there"
+            val_c = "Que"
+
+
