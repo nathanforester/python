@@ -53,8 +53,8 @@ example_xmas.insert(0, 'Mountain Bike')
 
 
 # Re-define another item on the list and print all the list
-example_xmas.pop(0)
-example_xmas.insert(0, 'Mountain Bike')
+example_xmas.pop(1)
+example_xmas.insert(1, 'Unicycle')
 print(example_xmas)
 
 

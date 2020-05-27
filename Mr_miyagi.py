@@ -30,30 +30,61 @@
 #  consider best practices of functions - make this functional
 import sys
 
-Mr_miyagi_question = ''
-Mr_miyagi_question = input()
+# mr_miyagi_question = ''
+# mr_miyagi_question = input()
+
+# while True:
+#      while mr_miyagi_question != "Sensei, I am at peace":
+#          if mr_miyagi_question.lower().find("sensei") != 0:
+#              print("You are smart, but not wise - address me as Sensei please")
+#              mr_miyagi_question = input()
+#          elif mr_miyagi_question.find("block") >= 0 or mr_miyagi_question.find("blocking") >=0:
+#              print("Remember, best block not to be there...")
+#              mr_miyagi_question = input()
+#          elif mr_miyagi_question.lower().find("sensei") == 0 and mr_miyagi_question.endswith("?"):
+#              print("questions are wise, but for now. Wax on, and Wax off!")
+#              mr_miyagi_question = input()
+#          else:
+#              print('do not lose focus. Wax on. Wax off.')
+#              mr_miyagi_question = input()
+#
+#      print('Sometimes, what heart know, head forget')
+#      sys.exit(-1)
+
+import sys
 
 while True:
-    while Mr_miyagi_question != "Sensei, I am at peace":
-        if Mr_miyagi_question.lower().find("sensei") != 0:
-            print("You are smart, but not wise - address me as Sensei please")
-            Mr_miyagi_question = input()
-        elif Mr_miyagi_question.find("block") >= 0 or Mr_miyagi_question.find("blocking") >=0:
-            print("Remember, best block not to be there...")
-            Mr_miyagi_question = input()
-        elif Mr_miyagi_question.lower().find("sensei") == 0 and Mr_miyagi_question.endswith("?"):
-            print("questions are wise, but for now. Wax on, and Wax off!")
-            Mr_miyagi_question = input()
-        else:
-            print('do not lose focus. Wax on. Wax off.')
-            Mr_miyagi_question = input()
 
-    print('Sometimes, what heart know, head forget')
-    sys.exit(-1)
+    def functional_miyagi(mr_miyagi_question):
+        break_string = ""
+        while mr_miyagi_question != "Sensei, I am at peace":
+            if mr_miyagi_question.lower().find("sensei") != 0:
+                return("You are smart, but not wise - address me as Sensei please")
+                return break_string
+            elif mr_miyagi_question.find("block") >= 0 or mr_miyagi_question.find("blocking") >= 0:
+                print("Remember, best block not to be there...")
+                return break_string
+            elif mr_miyagi_question.lower().find("sensei") == 0 and mr_miyagi_question.endswith("?"):
+                print("questions are wise, but for now. Wax on, and Wax off!")
+                return break_string
+            else:
+                print('do not lose focus. Wax on. Wax off.')
+                return break_string
 
-        def functional_miyagi():
-            val_a = "you are smart, but not wise, address me as Sensei please"
-            val_b = "Remember, best block not to be there"
-            val_c = "Que"
+        print('Sometimes, what heart know, head forget')
+        sys.exit(-1)
+
+
+    mr_miyagi_question = input()
+    functional_miyagi(mr_miyagi_question)
+
+# def one_response(mr_miyagi_question):
+
+
+
+
+
+
+
 
 

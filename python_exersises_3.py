@@ -16,7 +16,7 @@ while True:
 
 # We should define/assign number to a variable called magic_number
 
-    magic_number = (random.randint(0, 5))
+    magic_number = (random.randrange(0, 6))
 
 
 
