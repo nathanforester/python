@@ -28,11 +28,11 @@
 #  EXTRA:
 #  make it run continuously
 #  consider best practices of functions - make this functional
-import sys
-
+# import sys
+#
 # mr_miyagi_question = ''
 # mr_miyagi_question = input()
-
+#
 # while True:
 #      while mr_miyagi_question != "Sensei, I am at peace":
 #          if mr_miyagi_question.lower().find("sensei") != 0:
@@ -51,34 +51,36 @@ import sys
 #      print('Sometimes, what heart know, head forget')
 #      sys.exit(-1)
 
-import sys
+
 
 while True:
 
     def functional_miyagi(mr_miyagi_question):
-        break_string = ""
         while mr_miyagi_question != "Sensei, I am at peace":
             if mr_miyagi_question.lower().find("sensei") != 0:
-                return("You are smart, but not wise - address me as Sensei please")
-                return break_string
+                response_1 = input("You are smart, but not wise - address me as Sensei please")
+                return response_1
             elif mr_miyagi_question.find("block") >= 0 or mr_miyagi_question.find("blocking") >= 0:
-                print("Remember, best block not to be there...")
-                return break_string
+                response_2 = input("Remember, best block not to be there...")
+                return response_2
             elif mr_miyagi_question.lower().find("sensei") == 0 and mr_miyagi_question.endswith("?"):
-                print("questions are wise, but for now. Wax on, and Wax off!")
-                return break_string
+                response_3 = input("questions are wise, but for now. Wax on, and Wax off!")
+                return response_3
             else:
-                print('do not lose focus. Wax on. Wax off.')
-                return break_string
-
-        print('Sometimes, what heart know, head forget')
-        sys.exit(-1)
-
+                response_4 = input('do not lose focus. Wax on. Wax off')
+                return response_4
+        while mr_miyagi_question != "Sensei, I am at peace":
+            response_5 = input("Sometimes, what heart know, head forget")
+            return response_5
+        exit()
 
     mr_miyagi_question = input()
     functional_miyagi(mr_miyagi_question)
 
-# def one_response(mr_miyagi_question):
+
+
+
+
 
 
 
