@@ -55,6 +55,11 @@
 
 while True:
 
+    def exit_miyagi(mr_miyagi_question):
+        while mr_miyagi_question == "Sensei, I am at peace":
+            response = "Sometimes, what heart know, head forget"
+            return response
+
     def functional_miyagi(mr_miyagi_question):
         while mr_miyagi_question != "Sensei, I am at peace":
             if mr_miyagi_question.lower().find("sensei") != 0:
@@ -69,16 +74,16 @@ while True:
             else:
                 response_4 = input('do not lose focus. Wax on. Wax off')
                 return response_4
-        while mr_miyagi_question != "Sensei, I am at peace":
-            response_5 = input("Sometimes, what heart know, head forget")
-            return response_5
-        exit()
+        exit(exit_miyagi(mr_miyagi_question))
+
 
     mr_miyagi_question = input()
     functional_miyagi(mr_miyagi_question)
 
 
-
+ #     response_5 = input("Sometimes, what heart know, head forget")
+        #     return response_5
+        #                                      exit("Sometimes, what heart know, head forget") # # previous end of main def
 
 
 
