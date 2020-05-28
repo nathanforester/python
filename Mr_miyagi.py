@@ -51,8 +51,6 @@
 #      print('Sometimes, what heart know, head forget')
 #      sys.exit(-1)
 
-
-
 while True:
 
     def exit_miyagi(mr_miyagi_question):
